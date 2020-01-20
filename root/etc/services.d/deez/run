@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+
+echo "Starting Deez..."
+exec \
+	s6-setuidgid abc node \
+	"/app/deez/app/app.js"
